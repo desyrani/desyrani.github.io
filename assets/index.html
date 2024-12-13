@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Desy Maharani</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#certification">Certification</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Desy Maharani</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+          <li><a href="#courses" onclick="toggleMenu()">Courses</a></li>
+          <li><a href="#certification" onclick="toggleMenu()">Certification</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="../assets/ML1.jpg" alt="Daisy Cyy profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Desy Maharani</h1>
+        <p class="section___text__p2">
+          Final Year Student CS in Data Science specialization
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('../assets/Resume.pdf')"
+          >
+            Dowload CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/desykhmaharani/'"
+          />
+          <img
+            src="../assets/github.png"
+            alt="My GitHub Profile"
+            class="icon"
+            onclick="location.href='https://github.com/desyrani/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="../assets/ML1.jpg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="../assets/ML2.jpg" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>
+                - Data Analyst Intern (People Team) <br />- Active Student
+                Researcher with Academic Publications
+              </p>
+            </div>
+            <div class="details-container">
+              <img src="../assets/Edu.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>
+                - (Expected to graduate in 2025) from Albukhary International
+                University, Malaysia <br />
+                - Acceleration student in both Junior High School and Senior
+                High School
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              quod quia accusamus laudantium maxime recusandae porro dignissimos
+              aliquid est? Explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="../assets/Edu.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"/> -->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="ecperience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">DATA SCIENCE</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PowerBI</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Data Studio</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Spreadsheet</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft Excel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">COMPUTER SCIENCE</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>...</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article> -->
+              <!-- <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>....</h3>
+                  <p>Experienced</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="../assets/Edu.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      /> -->
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project3.jpeg"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Four</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="../assets/Edu.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      /> -->
+    </section>
+
+
+
+
+
+    <section id="publication">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Publication</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/Paper1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PERFORMANCE COMPARISON OF MACHINE LEARNING MODELS TO REDUCE MISDIAGNOSIS RATES IN PSYCHIATRIC DISORDER USING EEG DATASET</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://journal.ppmi.web.id/index.php/jdaics/article/view/967'"
+              >
+                See The Paper
+              </button>
+              
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <img
+        src="../assets/Edu.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      /> -->
+    </section>
+
+
+
+
+
+    <section id="courses">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Core Courses Covered</h1>
+      <div class="ecperience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Compeleted in 7 semesters (3 years)</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Foundational and Core Courses</h3>
+                  <p>1. Problem Solving and Programming Fundamentals</p>
+                  <p>2. Mathematics for Computer Science</p>
+                  <p>3. Discrete Maths</p>
+                  <p>4. Probability and Statistics</p>
+                  <p>5. Computer Organization and Architecture</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming and Software Development</h3>
+                  <p>1. Object-Oriented Programming</p>
+                  <p>2. Data Structures and Algorithm Analysis</p>
+                  <p>3. Software Engineering</p>
+                  <p>4. Requirement Engineering</p>
+                  <p>5. Software Testing</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Systems and Networking</h3>
+                  <p>1. Operating Systems</p>
+                  <p>2. Data Communications and Networking</p>
+                  <p>3. Database Management Systems</p>
+                  <p>4. Parallel Distributed Databases</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Artificial Intelligence and Machine Learning</h3>
+                  <p>1. Artificial Intelligence</p>
+                  <p>2. Machine Learning</p>
+                  <p>3. Deep Learning</p>
+                  <p>4. Natural Language Processing</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Science and Analytics</h3>
+                  <p>1. Data Mining and Analytics</p>
+                  <p>2. Statistical Programming</p>
+                  <p>3. Information Visualization</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Development and Design</h3>
+                  <p>1. Web Design and Development</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="../assets/github.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ethics and Specialized Studies</h3>
+                  <p>1. Cyber Ethics</p>
+                  <p>2. Directed Study in Computer Science</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+
+
+
+    <section id="certification">
+      <p class="section__text__p1">Check Out My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Machine Learning AWS</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://journal.ppmi.web.id/index.php/jdaics/article/view/967'"
+              >
+                View
+              </button>
+              
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="../assets/project3.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <img
+        src="../assets/Edu.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      /> -->
+    </section>
+
+
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="../assets/email.jpg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=example123@gmail.com"
+              >example123@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="../assets/linkedin.png"
+            alt="Linkedin icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://linkedin.com/in/desykhmaharani/"
+              >Connect with Me</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Desy Maharani. All Right Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
