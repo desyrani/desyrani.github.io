@@ -302,6 +302,11 @@ section {
   margin: auto 0;
 }
 
+.text-container p {
+  text-align: justify;
+}
+
+
 /* EXPERIENCE SECTION */
 
 #experience {
