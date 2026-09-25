@@ -25,7 +25,7 @@ export default function Projects() {
 
       {!expanded && (
         <div className="flex justify-center mt-8 mb-8">
-          <Button label="View more projects and academic work →" href="#" onClick={() => setExpanded(true)} />
+          <Button label="View more projects and academic work →" href="#" onClick={() => setExpanded(true)} variant={1} />
         </div>
       )}
 

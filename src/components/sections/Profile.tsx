@@ -41,7 +41,6 @@ export default function Profile() {
         </p>
 
         <div className="flex justify-center lg:justify-start flex-wrap gap-2.5 mt-8">
-          <Button label="View my work ↓" href="#projects" variant={1} />
           {socialLinks.map((s) => (
             <Button key={s.href} label={s.shortLabel} href={s.href} icon={s.icon} />
           ))}

@@ -31,15 +31,22 @@ export interface AboutStat {
   description: string;
 }
 
-export interface WorkEvidenceTile {
+export interface WorkProofTile {
   label: string;
+  image?: string;
 }
 
 export type SkillAccent = "violet" | "cyan" | "orange" | "green";
 
-export interface EvidenceTile {
+export interface ProofTile {
   chip: string;
   caption: string;
+  image?: string;
+}
+
+export interface OpenProof {
+  label: string;
+  image?: string;
 }
 
 export interface ProjectStat {
@@ -53,7 +60,7 @@ export interface FeaturedProject {
   badgeAccent: SkillAccent;
   meta: string;
   description: string;
-  tiles: EvidenceTile[];
+  tiles: ProofTile[];
   tags: string[];
   stats: ProjectStat[];
 }
@@ -65,10 +72,10 @@ export interface JobEntryData {
   metaLocation: string;
   /** Legacy bullet-list format (used by roles not yet converted to featured-project cards). */
   bullets?: string[];
-  workEvidence?: {
+  workProof?: {
     eyebrow: string;
     title: string;
-    tiles: WorkEvidenceTile[];
+    tiles: WorkProofTile[];
   };
   /** Featured-project-card format (used for roles with distinct, showcase-worthy projects). */
   projects?: FeaturedProject[];

@@ -2,10 +2,11 @@ import { useState } from "react";
 import { jobEntries, skillCategories } from "../../data/experience";
 import JobEntry from "../ui/JobEntry";
 import SkillCategoryCard from "../ui/SkillCategoryCard";
-import EvidenceModal from "../ui/EvidenceModal";
+import ProofModal from "../ui/ProofModal";
+import type { OpenProof } from "../../types";
 
 export default function Experience() {
-  const [openEvidenceLabel, setOpenEvidenceLabel] = useState<string | null>(null);
+  const [openProof, setOpenProof] = useState<OpenProof | null>(null);
 
   return (
     <section id="experience" className="mx-[5%] lg:mx-40 pt-[4vh] box-border relative h-fit min-h-[96vh] mt-8 lg:mt-0">
@@ -16,7 +17,7 @@ export default function Experience() {
 
       <div className="flex flex-col gap-8 mt-8 mb-8">
         {jobEntries.map((entry) => (
-          <JobEntry key={entry.role} entry={entry} onOpenEvidence={setOpenEvidenceLabel} />
+          <JobEntry key={entry.role} entry={entry} onOpenProof={setOpenProof} />
         ))}
       </div>
 
@@ -31,7 +32,7 @@ export default function Experience() {
         ))}
       </div>
 
-      <EvidenceModal label={openEvidenceLabel} onClose={() => setOpenEvidenceLabel(null)} />
+      <ProofModal tile={openProof} onClose={() => setOpenProof(null)} />
     </section>
   );
 }

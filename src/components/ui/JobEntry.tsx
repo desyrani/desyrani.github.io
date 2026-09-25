@@ -1,13 +1,13 @@
 import type { JobEntryData } from "../../types";
-import WorkEvidenceGallery from "./WorkEvidenceGallery";
+import WorkProofGallery from "./WorkProofGallery";
 import FeaturedProjectCard from "./FeaturedProjectCard";
 
 interface JobEntryProps {
   entry: JobEntryData;
-  onOpenEvidence: (label: string) => void;
+  onOpenProof: (tile: { label: string; image?: string }) => void;
 }
 
-export default function JobEntry({ entry, onOpenEvidence }: JobEntryProps) {
+export default function JobEntry({ entry, onOpenProof }: JobEntryProps) {
   if (entry.projects) {
     return (
       <div>
@@ -20,7 +20,7 @@ export default function JobEntry({ entry, onOpenEvidence }: JobEntryProps) {
         </div>
         <div className="flex flex-col gap-5">
           {entry.projects.map((project) => (
-            <FeaturedProjectCard key={project.title} project={project} onOpenEvidence={onOpenEvidence} />
+            <FeaturedProjectCard key={project.title} project={project} onOpenProof={onOpenProof} />
           ))}
         </div>
       </div>
@@ -37,12 +37,12 @@ export default function JobEntry({ entry, onOpenEvidence }: JobEntryProps) {
         {entry.metaCompany} &middot; {entry.metaLocation}
       </div>
 
-      {entry.workEvidence && (
-        <WorkEvidenceGallery
-          eyebrow={entry.workEvidence.eyebrow}
-          title={entry.workEvidence.title}
-          tiles={entry.workEvidence.tiles}
-          onOpen={onOpenEvidence}
+      {entry.workProof && (
+        <WorkProofGallery
+          eyebrow={entry.workProof.eyebrow}
+          title={entry.workProof.title}
+          tiles={entry.workProof.tiles}
+          onOpen={onOpenProof}
         />
       )}
 

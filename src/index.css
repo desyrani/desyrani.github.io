@@ -69,6 +69,6 @@ body::after {
   background: var(--gradient-brand);
 }
 
-body.evidence-modal-lock {
+body.proof-modal-lock {
   overflow: hidden;
 }
