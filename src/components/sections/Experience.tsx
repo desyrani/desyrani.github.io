@@ -1,0 +1,47 @@
+import { useState } from "react";
+import { jobEntries, skillCategories } from "../../data/experience";
+import JobEntry from "../ui/JobEntry";
+import SkillCategoryCard from "../ui/SkillCategoryCard";
+import ProofModal from "../ui/ProofModal";
+import type { OpenProof } from "../../types";
+
+export default function Experience() {
+  const [openProof, setOpenProof] = useState<OpenProof | null>(null);
+
+  return (
+    <section id="experience" className="mx-[5%] lg:mx-40 pt-[4vh] box-border relative h-fit min-h-[96vh] mt-8 lg:mt-0">
+      <p className="text-text-dim text-[0.85rem] font-semibold tracking-[0.12em] uppercase text-center">Explore My</p>
+      <h1 className="font-display text-4xl sm:text-5xl font-extrabold tracking-[-0.02em] text-text text-center">
+        Experience
+      </h1>
+
+      <div className="flex flex-col gap-8 mt-8 mb-8">
+        {jobEntries.map((entry) => (
+          <JobEntry key={entry.role} entry={entry} onOpenProof={setOpenProof} />
+        ))}
+      </div>
+
+      <div id="skills" className="mt-20 mb-8 scroll-mt-8">
+        <p className="text-text-dim text-[0.85rem] font-semibold tracking-[0.12em] uppercase text-center">
+          What I Work With
+        </p>
+        <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-[-0.02em] text-text text-center">
+          Technical Skills
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        {skillCategories.map((category) => (
+          <SkillCategoryCard
+            key={category.title}
+            title={category.title}
+            accent={category.accent}
+            items={category.items}
+          />
+        ))}
+      </div>
+
+      <ProofModal tile={openProof} onClose={() => setOpenProof(null)} />
+    </section>
+  );
+}
