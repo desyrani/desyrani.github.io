@@ -21,6 +21,7 @@ export interface Testimonial {
   quote: string;
   name: string;
   title: string;
+  letterUrl?: string;
 }
 
 export type StatAccent = "violet" | "cyan" | "orange" | "green";

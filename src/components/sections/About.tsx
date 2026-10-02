@@ -49,13 +49,20 @@ export default function About() {
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-4">
               <span className="font-semibold text-text">{testimonial.name}</span>
               <span className="text-text-faint">&mdash; {testimonial.title}</span>
-              <span className="inline-flex items-center gap-1.5 text-text-faint text-sm">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
-                  <path d="M14 2v6h6" />
-                </svg>
-                Full letter
-              </span>
+              {testimonial.letterUrl && (
+                <a
+                  href={testimonial.letterUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-accent-cyan text-sm underline decoration-[rgba(34,211,238,0.4)] underline-offset-4 transition-colors duration-200 ease hover:text-text hover:decoration-current"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z" />
+                    <path d="M14 2v6h6" />
+                  </svg>
+                  Read full letter
+                </a>
+              )}
             </div>
           </blockquote>
         ))}

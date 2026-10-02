@@ -15,7 +15,7 @@ export const jobEntries: JobEntryData[] = [
         badgeAccent: "violet",
         meta: "Full ownership — design, architecture, implementation · EnsoNex",
         description:
-          "Designed and built an end-to-end serverless pipeline on AWS Bedrock, Lambda, GraphQL, and DynamoDB with the YouTube Data API — tagging 16,000+ creator profiles sourced by the platform's in-house discovery system into 300+ games, 200+ genres, and 30+ content styles, with Creator Style classification and Confidence Score logic on each result — reducing manual tagging from ~3 minutes to under 1 second per creator (80 per batch).",
+          "Designed and built an end-to-end serverless pipeline on AWS Lambda, GraphQL, and DynamoDB with the YouTube Data API — tagging 16,000+ creator profiles sourced by the platform's in-house discovery system into 300+ games, 200+ genres, and 30+ content styles, with Creator Style classification and Confidence Score logic on each result — reducing manual tagging from ~3 minutes to under 1 second per creator (80 per batch).",
         tiles: [
           { chip: "Pipeline Output - Single Game", caption: "Single-game creator: LLM finds the game and returns genre, setting and platform tags", image: "/detail/AITagging_Testing.png" },
           { chip: "Verification", caption: "Checked against the real channel: content is mostly Zenless Zone Zero", image: "/detail/AITagging_Result.png" },
@@ -23,7 +23,7 @@ export const jobEntries: JobEntryData[] = [
           { chip: "Verification", caption: "Checked against the real channel: Rise of Kingdoms and Call of Dragons content", image: "/detail/AITagging_MultiGames_Result.png" },
           { chip: "Production UI", caption: "Generated tags shown on creator cards for brand discovery and filtering", image: "/detail/AITagging_UI.png" },
         ],
-        tags: ["AWS Bedrock", "AWS Lambda", "GraphQL", "DynamoDB", "YouTube Data API", "Node.js"],
+        tags: ["AWS Lambda", "GraphQL", "LLM APIs", "YouTube Data API", "DynamoDB"],
         stats: [
           { label: "16,000+", description: "Creator profiles tagged" },
           { label: "~3 min → <1 sec", description: "Per creator" },
@@ -41,6 +41,7 @@ export const jobEntries: JobEntryData[] = [
           { chip: "Creator Portal", caption: "Campaign marketplace: creators browse matched brand campaigns by genre, platform and payout", image: "/detail/CreatorPortal_Marketplace.png" },
           { chip: "Brand/Marketer Portal", caption: "Brand dashboard: marketers see only their own games and campaigns, each with a creator pipeline", image: "/detail/MarketerPortal_BrandManagement.png" },
           { chip: "Staff Portal", caption: "Internal operations: manage every campaign's status, budget and timeline in one place", image: "/detail/StaffPortal_CampaignManagement.png" },
+          { chip: "Cross-Platform", caption: "One React Native codebase: the campaign list becomes a sidebar on web and scrolling chips on iOS", image: "/detail/MobileUI.png" },
         ],
         tags: ["React Native", "Expo", "TypeScript", "AWS Amplify Gen 2", "AppSync GraphQL", "Cognito", "Lambda", "S3", "DynamoDB"],
         stats: [

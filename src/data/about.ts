@@ -9,12 +9,14 @@ export const testimonials: Testimonial[] = [
       "This was not a task handed to her with a blueprint; she identified the technical approach, made key architectural decisions, and delivered a production-ready system that now underpins how we match creators to campaigns. The initiative and judgment she demonstrated were well beyond what is typically expected at her level.",
     name: "Bhaviinish Ganasan",
     title: "Technical Lead, EnsoNex Sdn. Bhd.",
+    letterUrl: "/detail/Letters/Recommendation_Letter_Desy_Maharani.pdf",
   },
   {
     quote:
       "Desy demonstrated strong technical proficiency across front-end and back-end development, a sound understanding of AI systems integration, and the ability to deliver independently across multiple workstreams simultaneously. She was reliable, diligent, and consistently delivered quality outputs throughout her engagement.",
     name: "Angie Chung",
     title: "CEO & Founder, EnsoNex Sdn. Bhd.",
+    letterUrl: "/detail/Letters/Reference_Letter_Desy_Maharani.pdf",
   },
 ];
 

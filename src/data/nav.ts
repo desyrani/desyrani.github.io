@@ -18,7 +18,7 @@ export const socialLinks: SocialLink[] = [
 
 export const contactEmail = "desyandmaharani@gmail.com";
 
-export const cvUrl = "/cv/Desy_Maharani_CV.pdf";
+export const cvUrl = "/detail/Letters/Desy_Resume_Full_Stack_Software_Engineer.pdf";
 
 export const contactLinks: ContactLink[] = [
   { icon: "/detail/email.jpg", label: contactEmail, href: `mailto:${contactEmail}` },
