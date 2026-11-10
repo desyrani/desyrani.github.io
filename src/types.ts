@@ -98,6 +98,8 @@ export interface ProjectCard {
   image: string;
   alt: string;
   title: string;
+  description?: string;
+  tags?: string[];
   buttons: ProjectButton[];
 }
 

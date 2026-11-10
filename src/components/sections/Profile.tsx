@@ -25,7 +25,7 @@ export default function Profile() {
             <rect x="2" y="4" width="20" height="14" rx="2" />
             <path d="M8 21h8M12 17v4" />
           </svg>
-          FULL-STACK &amp; AI ENGINEER
+          AI ENGINEER &middot; FULL-STACK
         </div>
 
         <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.25rem] font-extrabold tracking-[-0.02em] text-text leading-[1.15]">
@@ -40,8 +40,9 @@ export default function Profile() {
         </h1>
 
         <p className="text-base sm:text-lg text-text-dim leading-[1.7] mt-6 max-w-xl mx-auto lg:mx-0">
-          Full-stack engineer building cloud-native web and mobile apps with{" "}
-          <span className="text-text font-medium">AI/LLM integration</span>, using{" "}
+          AI engineer building{" "}
+          <span className="text-text font-medium">LLM pipelines, prompt optimization, and evaluation</span>, and
+          shipping them end to end with{" "}
           <span className="text-text font-medium">React, TypeScript, GraphQL, and AWS</span>.
         </p>
 

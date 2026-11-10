@@ -23,7 +23,7 @@ export default function Contact() {
       </h1>
 
       <p className="text-text-muted text-base sm:text-lg leading-[1.7] text-center max-w-2xl mt-6">
-        I&rsquo;m open to full-stack and AI engineering roles. The fastest way to reach me is email &mdash; I
+        I&rsquo;m open to AI engineering and full-stack roles. The fastest way to reach me is email &mdash; I
         usually reply within a day.
       </p>
 

@@ -1,7 +1,7 @@
 import type { AboutStat, Testimonial } from "../types";
 
 export const aboutIntro =
-  "I'm a full-stack engineer who thrives at the intersection of software and AI. I've shipped production systems across gaming creator platforms, EdTech, and AI data services — from designing serverless AI pipelines to architecting multi-portal applications serving creators, brands, and agencies. I care most about owning problems end-to-end: understanding the business need, making the architectural calls, and delivering working software that people actually use.";
+  "I'm an AI engineer who builds LLM-powered systems and ships them end to end. I've put AI into production across gaming creator platforms, EdTech, and AI data services — from owning a serverless LLM pipeline that tags 16,000+ creator profiles, to helping build LLM-powered essay marking and exam generation tools, to annotating large-scale multimodal datasets for model training. My full-stack background means I don't stop at the model: I make the architectural calls, build the product around it, and deliver software people actually use.";
 
 export const testimonials: Testimonial[] = [
   {
@@ -23,8 +23,8 @@ export const testimonials: Testimonial[] = [
 export const aboutStats: AboutStat[] = [
   {
     accent: "violet",
-    headline: "2+ years experience",
-    description: "Full-stack and AI engineering",
+    headline: "1.5+ years experience",
+    description: "AI and full-stack engineering",
   },
   {
     accent: "green",
@@ -33,8 +33,8 @@ export const aboutStats: AboutStat[] = [
   },
   {
     accent: "violet",
-    headline: "Full-stack + AI + cloud",
-    description: "React, TypeScript, AWS, LLM APIs",
+    headline: "LLMs + full-stack + cloud",
+    description: "LLM APIs, DSPy, AWS Bedrock, React, TypeScript",
   },
   {
     accent: "orange",

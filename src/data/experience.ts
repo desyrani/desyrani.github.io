@@ -2,7 +2,7 @@ import type { JobEntryData, SkillCategory } from "../types";
 
 export const jobEntries: JobEntryData[] = [
   {
-    role: "Full-Stack Software Engineer",
+    role: "AI Full-Stack Software Engineer",
     dates: "Jan – Sept 2026",
     metaCompany: "EnsoNex (DMSA Global) Sdn. Bhd.",
     companyUrl: "https://ensonex.com/",
@@ -79,15 +79,15 @@ export const jobEntries: JobEntryData[] = [
     metaLocation: "Kuala Lumpur, Malaysia",
     accent: "cyan",
     bullets: [
-      "Built an AI essay grading system achieving 85%+ alignment with human evaluators and processing 1,000+ essays in under 5 seconds each, handling both the backend grading pipeline (Node.js) and frontend integration (React.js) for the assessment interface.",
-      "Developed and maintained full-stack features across the Pandai education platform — building React.js frontend components, Node.js backend services, and RESTful APIs to integrate AI-powered tools into the production application.",
-      "Developed LLM-powered applications integrating DSPy for prompt optimization and Langfuse for model monitoring and auto-alerting, enhancing evaluation accuracy and reliability.",
-      "Enhanced LLM performance by improving accuracy by 10%+ and reducing false positives/negatives by 15%, contributing to MagicAI Tools and Pandai App integrations for API scalability.",
+      "Developed LLM-powered applications, integrating DSPy for prompt optimization and Langfuse for observability.",
+      "Contributed to AI-driven automated essay marking and exam scheme generation systems, improving assessment efficiency.",
+      "Set up Langfuse auto-alerting and ran continuous LLM evaluation and monitoring, helping improve accuracy and reduce false positives/negatives.",
+      "Contributed to MagicAI Tools, Pandai App integrations, and the API Builder.",
       "Worked within an Agile/Scrum workflow, participating in sprint planning sessions, managing code through Git version control, and conducting peer code reviews across the engineering team.",
     ],
   },
   {
-    role: "AI Data Engineer",
+    role: "AI Data Annotator",
     dates: "Aug – Dec 2025",
     metaCompany: "Lifewood Data Technology Sdn. Bhd.",
     companyUrl: "https://lifewood.com/",
@@ -102,13 +102,37 @@ export const jobEntries: JobEntryData[] = [
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: "Programming Languages",
+    title: "AI & LLM",
     accent: "violet",
-    items: ["TypeScript", "JavaScript", "Python", "SQL", "Java"],
+    items: [
+      "LLM Applications",
+      "LLM APIs",
+      "Prompt Optimization (DSPy)",
+      "LLM Evaluation & Monitoring (Langfuse)",
+      "RAG",
+      "AWS Bedrock (Amazon Nova)",
+      "TensorFlow",
+      "PyTorch",
+    ],
+  },
+  {
+    title: "Programming Languages",
+    accent: "cyan",
+    items: ["Python", "TypeScript", "JavaScript", "SQL", "Java"],
+  },
+  {
+    title: "Cloud (AWS)",
+    accent: "orange",
+    items: ["Lambda", "Bedrock", "S3", "Amplify Gen 2", "Cognito", "IAM (Identity and Access Management)", "CloudWatch"],
+  },
+  {
+    title: "Backend & APIs",
+    accent: "green",
+    items: ["GraphQL", "AWS AppSync", "REST APIs", "Node.js", "FastAPI"],
   },
   {
     title: "Frontend & Mobile",
-    accent: "cyan",
+    accent: "violet",
     items: [
       "React Native",
       "React",
@@ -120,24 +144,9 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Backend & APIs",
-    accent: "orange",
-    items: ["GraphQL", "AWS AppSync", "REST APIs", "Node.js", "FastAPI"],
-  },
-  {
     title: "Database",
-    accent: "green",
-    items: ["Amazon DynamoDB (NoSQL)", "PostgreSQL", "MySQL"],
-  },
-  {
-    title: "Cloud (AWS)",
-    accent: "violet",
-    items: ["Amplify Gen 2", "Lambda", "Cognito", "S3", "Bedrock", "IAM (Identity and Access Management)", "CloudWatch"],
-  },
-  {
-    title: "Artificial Intelligence",
     accent: "cyan",
-    items: ["LLM Applications", "LLM APIs", "AWS Bedrock", "DSPy", "Langfuse", "RAG", "TensorFlow", "PyTorch"],
+    items: ["Amazon DynamoDB (NoSQL)", "PostgreSQL", "MySQL"],
   },
   {
     title: "Software Engineering",
